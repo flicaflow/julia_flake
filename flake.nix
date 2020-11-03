@@ -4,7 +4,7 @@
   outputs = { self, nixpkgs }: {
 
     packages.x86_64-linux =
-      with nixpkgs.legacyPackages.x86_64-linux;  {
+      with nixpkgs.legacyPackages.x86_64-linux;  rec {
 
         julia_15 = stdenv.mkDerivation rec {
           pname = "julia";
