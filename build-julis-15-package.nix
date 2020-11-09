@@ -21,6 +21,8 @@
       cp Manifest.toml depot/environments/v1.5/
       cp Project.toml depot/environments/v1.5/
 
+      rm -r depot/registries
+
     '';
 
     installPhase = ''
