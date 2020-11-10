@@ -15,7 +15,7 @@
 
     lib.buildJulia15Package = 
       with nixpkgs.legacyPackages.x86_64-linux; 
-      callPackage ./build-julis-15-package.nix { inherit (self.packages.x86_64-linux) julia_15; };
+      callPackage ./build-julia-15-package.nix { inherit (self.packages.x86_64-linux) julia_15; };
 
 
     apps.x86_64-linux.julia = {
