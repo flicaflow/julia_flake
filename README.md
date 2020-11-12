@@ -2,6 +2,15 @@
 
 This flake provides the julia programming environment and a builder for packaging julia programs.
 
+## Using julia
+
+Make sure nix is installed with [flake](https://nixos.wiki/wiki/Flakes) support. You can drop into a nix shell with julia installed just with
+```
+nix shell github:flicaflow/julia_flake#julia
+```
+
+
+
 ## Building Julia Packages
 
 Following snipped builds a julia program:
@@ -18,3 +27,5 @@ buildJulia15Package rec {
 ```
 
 Prerequisite for this is that Manifest.toml and Project.toml are present in the root of src.
+Leave the dependencyHash attribute empty initially and paste in the correct hash after the build fails.
+A demo application using can be found [here](https://github.com/flicaflow/julia_flake_demo/).
