@@ -1,7 +1,7 @@
 {stdenv, patchelf, ...}:
 stdenv.mkDerivation rec {
   pname = "julia";
-  version = "1.5.2";
+  version = "1.5.3";
 
   buildInputs = [ patchelf ];
 
